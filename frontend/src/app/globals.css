@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-white: #FFFFFF;
+  --color-light-gray: #F5F5F5;
+  --color-beige: #F8F6F0;
+  --color-dark-gray: #333333;
+  --color-medium-gray: #666666;
+  --color-light-text: #999999;
+  --color-red: #E30613;
+  --color-red-hover: #C50510;
+  --color-border: #E5E5E5;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-dark-gray);
+  background-color: var(--color-white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@theme {
+  --color-geometrica-red: #E30613;
+  --color-geometrica-dark: #333333;
+  --color-geometrica-medium: #666666;
+  --color-geometrica-light: #999999;
+  --color-geometrica-beige: #F8F6F0;
+  --color-geometrica-border: #E5E5E5;
+  --color-geometrica-gray-bg: #F5F5F5;
+  --font-heading: "Playfair Display", serif;
+}
